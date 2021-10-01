@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Border Radius Previwer</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg-auto">
+      <h1 class="mx-auto h1">Border Radius Previwer</h1>
+      <div class="panel-container">
+        <div class="input-group-container d-flex flex-column flex-md-row justify-content-between w-100">
+          <input id="up-left" type="number" class="input-control form-control w-auto" min="0" max="999999999" pattern="[0-9]+">
+          <input id="up-right" type="number" class="input-control form-control w-auto mt-3 mt-md-0" min="0" max="999999999" pattern="[0-9]+">
+        </div>
+        <div class="result-panel my-3 mx-auto" id="result">
+        </div>
+        <div class="input-group-container d-flex flex-row flex-column flex-md-row justify-content-between w-100">
+          <input id="down-left" type="number" class="input-control form-control w-auto" min="0" max="999999999"  pattern="[0-9]+">
+          <input id="down-right" type="number" class="input-control form-control w-auto mt-3 mt-md-0" min="0" max="999999999"  pattern="[0-9]+">
+        </div>
+      </div>
+      <button class="button btn-dark mt-5 mb-3 mx-auto" id="btn-copy">Copy!</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

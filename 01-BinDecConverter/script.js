@@ -8,7 +8,7 @@ let isBinDisabled = true;
 binInput.disabled = isBinDisabled;
 
 const bin2Dec = () => {
-  return parseInt(binInput.value, 2);
+  return parseInt(binInput.value, 2); // lala
 }
 
 const dec2Bin = () => {

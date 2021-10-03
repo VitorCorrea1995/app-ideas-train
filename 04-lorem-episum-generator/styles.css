@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  color: white;
+}
+
+.lorem-generator-container .result-container {
+  width: 700px;
+  word-break: break-word;
+  white-space: pre-line;
+}

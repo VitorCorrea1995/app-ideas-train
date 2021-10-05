@@ -47,6 +47,7 @@ const displayData = (repositories) => {
 
   repositoryCountEl.innerText = repositories.length;
 
+  topRepositoriesEl.innerHTML = '';
   for (let count = 0; count < TOTAL_REPOSITORIES_TO_DISPLAY; count++) {
     const repository = document.createElement('li');
     repository.classList.add('list-group-item');

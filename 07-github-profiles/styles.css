@@ -1,0 +1,34 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.github-profiles-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.github-profiles-container .title {
+  color: 	#c26b09
+}
+
+.github-profiles-container .info-text {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.github-profiles-container .output-container,.input-container {
+  color: #925836;
+}
+
+.github-profiles-container .output-container img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #925836;
+}

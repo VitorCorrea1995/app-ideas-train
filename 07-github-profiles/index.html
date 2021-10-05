@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>GitHub Profiles</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="github-profiles-container d-flex flex-column justify-content align-items-center">
+      <h1 class="title h1">GitHub Profiles</h1>
+      <div class="input-container mt-5">
+        <label for="searchProfile">Search</label>
+        <input type="text" class="form-control" id="searchProfile" placeholder="Insert what you want to search...">
+      </div>
+      <div class="output-container d-flex flex-column justify-content-center align-items-center mt-5">
+        <div class="avatar-container h-auto w-auto d-flex justify-content-center">
+          <img alt="User avatar" id="userAvatar" class="d-none">
+        </div>
+        <div class="text-container d-flex flex-row mt-3">
+          <span class="info-text font-weight-bold">Followers:</span><span class="info-text ml-2" id="followers"></span>
+        </div>
+        <div class="text-container d-flex flex-row">
+          <span class="info-text font-weight-bold">Following:</span><span class="info-text ml-2" id="following"></span>
+        </div>
+        <div class="text-container d-flex flex-row">
+          <span class="info-text font-weight-bold">Username:</span><span class="info-text ml-2" id="username"></span>
+        </div>
+        <div class="text-container d-flex flex-row">
+          <span class="info-text font-weight-bold">Repository count:</span><span class="info-text ml-2" id="repositoryCount"></span>
+        </div>
+        <div class="top-repositories mt-3 d-flex flex-column justify-content-center align-items-center">
+          <h5 class="h4">Top repositories:</h5>
+          <ul id="topRepositories" class="list-group">
+          </ul>
+        </div>
+        <div id="alertMsg" class="alert alert-danger d-none mt-5">
+          The searched user do not exist!
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "port": 8080,
+  "foodDb": {
+    "host": "localhost",
+    "port":"3306",
+    "database":"food",
+    "username":"root",
+    "password": "password"
+  }
+}

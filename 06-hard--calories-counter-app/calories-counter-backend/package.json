@@ -1,0 +1,23 @@
+{
+  "name": "calories-counter-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitor Correa",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-status": "^1.5.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.3"
+  }
+}

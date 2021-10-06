@@ -1,0 +1,21 @@
+body {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526); 
+  background: linear-gradient(to right, #414345, #232526);
+}
+
+#caloriesLeft {
+  font-size: 46px;
+}
+
+.calendar-section {
+  background: #C9D6FF;
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+.calendar-section input[type="date"] {
+  border: 1px solid #c4c4c4;
+  text-align: right;
+  padding: 0;
+}

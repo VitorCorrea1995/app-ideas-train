@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./calories-count-page.css">
+  </head>
+  <body>
+  <section class="calories-count-section section">
+    <div class="container is-flex is-flex-direction-row is-justify-content-space-between has-text-white-ter">
+      <div id="caloriesLeft" class="is-family-sans-serif">1200 calories left</div>
+      <div>
+        <span id="caloriesEaten" class="is-family-sans-serif is-block">Eaten: 400</span>
+        <span id="caloriesBurned" class="is-family-sans-serif is-block">Burned: 300</span>
+      </div>
+    </div>
+  </section>
+  <section class="macro-nutrient-section section mt-4">
+    <div class="container is-flex is-flex-direction-row is-justify-content-space-between">
+      <div class="card">
+        <div class="card-content">
+          Protein
+        </div>
+      </div>
+      <div class="box">Carbohydrate: 60g</div>
+      <div class="box">Fat: 10g</div>
+    </div>
+  </section>
+  <section class="meals-section section mt-4"">
+    <div class="breakfast container is-flex is-flex-direction-column is-justify-content-space-between">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Breakfast
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item button is-primary">Save</a>
+          <a href="#" class="card-footer-item button is-link">Edit</a>
+          <a href="#" class="card-footer-item button is-danger">Delete</a>
+        </footer>
+      </div>
+    </div>
+    <div class="lunch container is-flex is-flex-direction-column is-justify-content-space-between mt-3">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Lunch
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item button is-primary">Save</a>
+          <a href="#" class="card-footer-item button is-link">Edit</a>
+          <a href="#" class="card-footer-item button is-danger">Delete</a>
+        </footer>
+      </div>
+    </div>
+    <div class="dinner container is-flex is-flex-direction-column is-justify-content-space-between mt-3">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Dinner
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item button is-primary">Save</a>
+          <a href="#" class="card-footer-item button is-link">Edit</a>
+          <a href="#" class="card-footer-item button is-danger">Delete</a>
+        </footer>
+      </div>
+    </div>
+  </section>
+  <section class="calendar-section section">
+    <div class="container is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+      <input type="date" id="actualDay" name="actualDay">
+    </div>
+  </section>
+  </body>
+</html>

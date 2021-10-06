@@ -16,7 +16,7 @@ class HttpServer {
     this._app = express();
     this._configureServer();
     this._setupMiddlewares();
-    this._setupRoutes();
+    this._setupRouters();
     this._setupErrorHandlers();
   }
 
@@ -38,9 +38,8 @@ class HttpServer {
     this._app.use(authMiddleware);
   }
 
-  _setupRoutes() {
-    this._app.use(this.APP_PREFIX, require('./routes/food-routes'));
-    // this._app.use(this.APP_PREFIX, require('./controllers/food-controller'));
+  _setupRouters() {
+    this._app.use(this.APP_PREFIX, require('./router/food-router'));
   }
 
   _setupErrorHandlers() {

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.voting-container {
+  background-color: rgb(170, 150, 120);
+  padding: 30px;
+  border: .5px solid #0A0A0A;
+}
+
+.voting-container .screen {
+  width: 450px;
+  height: 402px;
+  background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+  border: .3px solid #0A0A0A;
+}
+
+.voting-container .logo-info {
+  background-color: #e4e4e4;
+  width: 340px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.voting-container .logo-info img {
+  width: 70px;
+  height: 70px;
+}
+
+.voting-container .keyboard {
+  margin-left: 30px;
+  background-color: #413c3c;
+}
+
+.voting-container .keyboard .keyboard-actions {
+  margin-top: 10px;
+}
+
+.voting-container .keyboard .keyboard-button {
+  width: 70px;
+  height: 40px;
+  background: #000;
+  color: #FFF;
+  font-size: 25px;
+  margin: 13px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #555;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voting-container .keyboard .action-button {
+  color:#000;
+  font-size:15px;
+  font-weight: 500;
+}
+
+.voting-container .keyboard .button-white {
+  background-color: #FFF;
+}
+
+.voting-container .keyboard .button-fix {
+  background-color: rgb(241, 129, 1);
+}
+
+.voting-container .keyboard .button-confirm {
+  background-color: rgb(97, 167, 41);
+}

@@ -1,0 +1,88 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.pomodoro-container {
+  width: 100vw;
+  height: 100vh;
+  background: #AD5389;
+  background: -webkit-linear-gradient(to right, #3C1053, #AD5389);
+  background: linear-gradient(to right, #3C1053, #AD5389);
+  color:#FFF;
+}
+
+.pomodoro-container .display {
+  background-color: #000;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.pomodoro-container .phase-display {
+  font-size: 36px;
+}
+
+.pomodoro-container .time-display {
+  font-size: 140px;
+}
+
+.pomodoro-container h1 {
+  color: #FFF;
+}
+
+.pomodoro-container .action-buttons-container i {
+  font-size: 20px;
+}
+
+.pomodoro-container .action-button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 15px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;            
+  box-shadow: 0 0 20px #EEE;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(to right, #FF6E7F 0%, #BFE9FF  51%, #FF6E7F  100%)
+}
+
+.pomodoro-container .action-button:hover {
+  background-position: right center;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.pomodoro-container .controls {
+  background-color: #FFF;
+  color: #000;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.pomodoro-container .controls .settings-container {
+  font-size: 24px;
+}
+
+.pomodoro-container i,button{
+  cursor: pointer;
+}
+
+.pomodoro-container .up-button,.down-button {
+  background-color: #AD5389;
+  padding: 5px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.pomodoro-container .up-button:hover,.down-button:hover {
+  background-color: #3C1053;
+  color: #FFF;
+}

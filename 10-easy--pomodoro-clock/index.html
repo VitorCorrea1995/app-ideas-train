@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="pomodoro-container d-flex flex-column justify-content-center align-items-center">
+      <div class="cloack-container d-flex flex-column">
+        <h1 class="h1 mx-auto">Pomodoro Timer</h1>
+        <div class="display w-100 d-flex flex-column justify-content-center align-items-center p-4">
+          <span class="mx-auto phase-display">Session</span>
+          <span class="time-display">
+            25:00
+          </span>
+        </div>
+        <div class="controls">
+            <div class="action-buttons-container d-flex flex-row w-100 justify-content-center align-items-center">
+              <button class="action-button"><i class="fas fa-play"></i></button>
+              <button class="ml-2 action-button "><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="settings-container w-100 d-flex justify-content-between align-items-between p-5">
+              <div class="session-setting d-flex flex-column mx-3 justify-content-center align-items-center mr-3">
+                <span class="font-weight-bold">Session length</span>
+                <div class="d-flex flex-row mt-2">
+                  <i class="fas fa-arrow-up up-button"></i>
+                  <span class="mx-5">25:00</span>
+                  <i class="fas fa-arrow-down down-button"></i>
+                </div>
+              </div>
+              <div class="break-setting d-flex flex-column justify-content-center align-items-center ml-3">
+                <span class="font-weight-bold">Break length</span>
+                <div class="d-flex flex-row mt-2">
+                  <i class="fas fa-arrow-up up-button"></i>
+                  <span class="mx-5">5:00</span>
+                  <i class="fas fa-arrow-down down-button"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

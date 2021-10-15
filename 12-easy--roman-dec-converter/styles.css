@@ -1,0 +1,46 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8); 
+  background: linear-gradient(to right, #8f94fb, #4e54c8); 
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+}
+
+textarea #input,#output {
+  background-color: #7b7fc0;
+  color: white;
+  font-weight: bold;
+}
+
+label {
+  color: white;
+}
+
+button.purple {
+  padding: 10px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  color: #AA66CC;
+  background-color: #ffffff;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+}
+
+button.purple:hover {
+  color: #ffffff;
+  background-color: #AA66CC;
+}

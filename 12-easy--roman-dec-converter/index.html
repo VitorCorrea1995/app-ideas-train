@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Roman Dec Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="roman-dec-converter-container d-flex flex-column justify-content-center align-items-center">
+      <h1 class="title mt-5">Roman Decimal Converter</h1>
+      <div class="content d-flex flex-row justify-content-between align-items-center mt-5">
+        <div class="options mr-5">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="toDecimal" value="toDecimal">
+            <label class="form-check-label" for="toDecimal">
+              To Decimal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="toRoman" value="toRoman">
+            <label class="form-check-label" for="toRoman">
+              To Roman
+            </label>
+          </div>
+          <button class="purple mt-3 w-100 p-2 rounded" id="convert">Convert</button>
+        </div>
+        <div class="form-group mr-5">
+          <textarea name="input" id="input" cols="30" rows="10" class="form-control" placeholder="Add your input here please" maxLength="20"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea name="output" id="output" cols="30" rows="10" class="form-control" disabled></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

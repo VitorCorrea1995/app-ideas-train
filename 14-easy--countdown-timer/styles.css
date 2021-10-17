@@ -1,0 +1,35 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.countdown-timer-container {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.count-field,.output-field-divider {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.count-label {
+    font-size: 18px;
+    padding-top: 2px;
+    border-top: 1px solid black;
+}
+

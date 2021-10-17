@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="countdown-timer-container d-flex flex-column align-items-center justify-content-center">
+      <h1 class="h1 title">Countdown Timer</h1>
+      <div class="input-container my-5">
+        <input id="input" type="date" class="form-control" onchange="setCountDown(this.value)">
+      </div>
+      <div class="output-container d-flex flex-row align-items-center justify-content-center">
+        <div class="output-field d-flex flex-column mt-3">
+          <span id="count-day" class="count-field d-flex justify-content-center align-items-center mt-4">0</span>
+          <span class="count-label mt-3">Days</span>
+        </div>
+        <span class="output-field-divider mx-5">:</span>
+        <div class="output-field d-flex flex-column mt-3">
+          <span id="count-hour" class="count-field d-flex justify-content-center align-items-center mt-4">0</span>
+          <span class="count-label mt-3">Hours</span>
+        </div>
+        <span class="output-field-divider mx-5">:</span>
+        <div class="output-field d-flex flex-column mt-3">
+          <span id="count-minute" class="count-field d-flex justify-content-center align-items-center mt-4">0</span>
+          <span class="count-label mt-3">Minutes</span>
+        </div>
+        <span class="output-field-divider mx-5">:</span>
+        <div class="output-field d-flex flex-column mt-3">
+          <span id="count-second" class="count-field d-flex justify-content-center align-items-center mt-4">0</span>
+          <span class="count-label mt-3">Seconds</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

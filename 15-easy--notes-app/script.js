@@ -21,7 +21,7 @@ const makeItem = (title = null, body = null) => {
   const noteHeaderTitle = document.createElement('div');
   noteHeaderTitle.classList.add('note-header-title');
   noteHeaderTitle.setAttribute('contenteditable', true);
-  noteHeaderTitle.innerText = title || NEW_NOTE_TITLE;
+  noteHeaderTitle.innerText = !title || title instanceof PointerEvent ?  NEW_NOTE_TITLE : title;
 
   const deleteIcon = document.createElement('i');
   deleteIcon.classList.add('fas');

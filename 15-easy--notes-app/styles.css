@@ -1,0 +1,83 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #e1eec3;
+  background: -webkit-linear-gradient(to right, #f05053, #e1eec3);
+  background: linear-gradient(to right, #f05053, #e1eec3);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.notes-container {
+  color: white;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: rgb(238, 192, 161);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.note-item i {
+  cursor: pointer;
+}
+
+.note-item .note-header {
+  background-color: rgb(184, 138, 107);
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.note-item .note-body {
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+button.add-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  color: #7a5421;
+  background-color: #f8a85d;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+}
+
+button.add-button:hover {
+  color: #ffffff;
+  background-color: #ff9102;
+}
+
+.fas.fa-trash {
+  margin-right: 5px;
+  margin-left: auto;
+  color: rgb(219, 0, 0);
+}
+
+.note-header-title {
+  font-weight: bold;
+  cursor: pointer;
+}

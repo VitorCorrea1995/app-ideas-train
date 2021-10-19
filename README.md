@@ -1,4 +1,4 @@
-# AppIdeasTrain
+# App Ideas Train
 
 I'm coding some apps to train.
 Starting small, just by using plain javascript, css and html.

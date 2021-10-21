@@ -25,6 +25,23 @@ body {
   width: 30%;
 }
 
-button {
+button,.button {
   cursor:pointer;
+}
+
+input[type='file'],  input[type='file']:hover{
+  color: transparent;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+#uploadBtn::before {
+  content: 'Upload your file';
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-size: 12px;
 }

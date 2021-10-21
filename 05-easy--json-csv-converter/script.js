@@ -2,6 +2,7 @@ const BREAK_LINE = '\n';
 
 const inputEl = document.getElementById('input');
 const outputEl = document.getElementById('output');
+outputEl.disabled = true;
 
 const toCSVBtn = document.getElementById('toCSVBtn');
 const toJSONBtn = document.getElementById('toJSONBtn');
@@ -97,21 +98,33 @@ const copyToClipboard = () => {
 }
 
 const download = () => {
-  clear();
-  _setInput('TO DO: DOWNLOAD!');
-  _setOutput('TO DO: DOWNLOAD!');
+  const filename = 'output.txt';
+  const blob = new Blob([JSON.stringify(_getOutput())], {type: 'text/plain'});
+
+  const url = window.URL.createObjectURL(blob);
+  const anchor = document.createElement('a');
+  anchor.style.display = 'none';
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.appendChild(anchor);
+  anchor.click();
+  window.URL.revokeObjectURL(url);
 }
 
-const upload = () => {
-  clear();
-  _setInput('TO DO: UPLOAD!');
-  _setOutput('TO DO: UPLOAD!');
+const upload = (event) => {
+  const reader = new FileReader()
+  reader.onload = handleFileUpload;
+  reader.readAsText(event.target.files[0]);
+}
+
+const handleFileUpload = (event) => {
+  _setInput(event.target.result);
 }
 
 toCSVBtn.addEventListener('click', toCSV);
 toJSONBtn.addEventListener('click', toJSON);
 clearBtn.addEventListener('click', clear);
-uploadBtn.addEventListener('click', upload);
+uploadBtn.addEventListener('change', upload);
 downloadBtn.addEventListener('click', download);
 clearBtn.addEventListener('click', clear);
 copyToClipboardBtn.addEventListener('click', copyToClipboard);

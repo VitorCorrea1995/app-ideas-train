@@ -15,7 +15,8 @@
         <div class="form-group">
           <textarea class="form-control" name="input" id="input" cols="30" rows="10" placeholder="Add your JSON or CSV"></textarea>
         </div>
-        <button class="button btn-primary mt-3 w-100 p-2 rounded" id="uploadBtn">Upload your file</button>
+        <button class="button btn-primary mt-3 w-100 p-2 rounded" onclick="document.getElementById('uploadBtn').click();">Upload your file</button>
+        <input id="uploadBtn" style="display: none;" type="file" accept=".csv, .json">
       </div>
       <div class="action-buttons-container d-flex flex-column justify-content-center align-items-center mx-3">
         <button class="button btn-primary mb-3 w-25" id="toCSVBtn">to CSV</button>

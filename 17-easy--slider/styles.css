@@ -1,0 +1,91 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.slider-container {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+img {
+  width: 100vw;
+  max-height: 100vh;
+
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+.buttons-container {
+  position: absolute;
+  top: 92%;
+  left: 95%;
+}
+
+.button-skin-orange {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.button {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  transition: 0.5s;
+  margin: 3px;
+  background-size: 200% auto;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+@-webkit-keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

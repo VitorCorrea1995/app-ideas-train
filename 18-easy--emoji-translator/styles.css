@@ -1,0 +1,68 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.emoji-translator-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6190E8;
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+  font-weight: 400;
+}
+
+
+.button {
+  cursor: pointer;
+  background: #339DFF;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 38px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /*width: 170px;*/
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+  background: #FFF;
+  color: #339DFF;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+.input,.output {
+  border-radius: 10px;
+  padding: 5px;
+  min-width: 350px;
+  min-height: 300px;
+  height: auto;
+  width: auto;
+  color: #FFF;
+  border: .5px solid #FFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input::placeholder {
+  color: #FFF;
+}
+
+.input {
+  background-color: rgb(72, 78, 172)
+}
+
+.output {
+  background-color: rgb(31, 36, 104)
+}

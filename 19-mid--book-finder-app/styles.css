@@ -1,0 +1,122 @@
+:root {
+  --primary-color: rgb(29, 116, 3);
+  --secondary-color: rgb(195, 255, 177);
+  --terciary-color: rgb(224, 255, 214);
+  --white: rgb(255,255,255);
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  background: #A1FFCE;
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE); 
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+}
+
+.book-finder-container {
+  margin-top: 30px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 53px;
+  font-family: 'Oleo Script', cursive;
+  color: var(--primary-color);
+}
+
+input.search-field {
+  width: 25%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  border: 1px solid rgb(29, 116, 3);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+button.button {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+button.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.output-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.output-card {
+  color: var(--primary-color);
+  background-color: var(--terciary-color);
+  padding: 10px;
+  width: 400px;
+  border-radius: 5px;
+  margin: 15px
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+img.card-image {
+  margin-right: 5px;
+  width: 150px;
+  height: 180px;
+}
+
+.info-title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.info-data {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}

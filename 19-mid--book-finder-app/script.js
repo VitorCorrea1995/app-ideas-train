@@ -1,4 +1,4 @@
-const API_KEY = `&key=yourKey`;
+const API_KEY = `&key=yourApiKey`;
 const MAX_RESULT = 20;
 const API = `https://www.googleapis.com/books/v1/volumes?maxResults=${MAX_RESULT}&q=`;
 const AUTHOR = 'Author:';
